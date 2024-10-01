@@ -1,0 +1,250 @@
+/* external css */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+       
+        *,html{
+            /* removing default margin and padding of entire page */
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        /* header settings */
+        .site-logo-nav{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            gap:20px;
+            
+          }
+        
+       .site-logo{
+            height: 60px;
+            width: 60px;
+        }
+        .site-title{
+            font-size: 45px;
+            /* from google font */
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
+           
+        }
+        .nav-ulist{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            gap:15px;
+            list-style: none; 
+            margin: 12px 0; 
+            
+        }
+       
+        .nav-items{
+            position: relative;
+            padding: 10px 25px;
+            /* for all menu item backgound color goes green */
+            background-color: #93C572;               
+        }
+        
+        /* when it is odd it will turn into blue */
+        .nav-items:nth-child(odd){
+        background-color: #6495ED;
+       
+       }
+       .nav-items:hover{
+          
+            background-color: #ECFFDC;
+
+           
+       
+        }
+        .nav-items:hover a{
+                color:black;    
+        }
+       
+       
+        .nav-link{
+            text-decoration: none;
+            color:white;
+          
+        }
+        .nav-link:hover{
+            color:black;
+        }
+       .nav-submenu{
+        position: absolute;
+        left:0;
+        top:100%; /* bring the child next to parent */
+        list-style: none; /*remove list numbers or styles like 1,2,3 or circle,square*/
+        z-index:20;
+        background-color: #93C572;
+        display:none;
+       }
+       .nav-submenu li{
+        padding: 10px 14px;
+       }
+      
+       .nav-submenu li a{
+        display: block;
+        color:white;
+        text-decoration: none;
+       }
+       .nav-submenu li:hover {
+        background-color: #ECFFDC;
+        color:black;
+       }
+       .nav-item:hover .nav-submenu{
+        display: block;
+       }
+         
+        /* end of header settings */
+
+        /* main settings */
+        .main-settings{
+            position: relative;
+            /* background-color: #dbf679; */
+            z-index: 10px;
+        }
+   
+     
+        .div-title{
+                font-size: 45px;
+                color: green;
+                font-family: "Fascinate Inline", system-ui;
+                font-weight: 400;
+                font-style: normal;
+                
+            }
+        .home-div{
+            position: relative;
+            width:80%;
+            margin: 0 auto;
+            /* background-color: #8b8bf8; */
+            padding:50px;
+         
+                 
+        }
+        /* service settings */
+        .service-div{
+            position: relative;
+            /* background-color: #70f798; */
+            padding:50px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+          
+        }
+
+        .package-container{
+            position: relative;
+            width:350px;
+
+        }
+        .package-title, .place-info,.place-button{
+            position: absolute;
+            /* color:green; */
+
+        }
+        .package-title{
+            top:80px;
+            font-size: 18px;
+            border: 1px solid black;
+            border-left: none;
+            padding:2px;
+        }
+        .place-button{
+            bottom:50px;
+            left:80px;
+            right:80px;
+            margin: auto;
+            padding: 10px 15px;
+            cursor:pointer;
+            font-size: 16px;
+            background-color: aliceblue;
+        }
+        .place-img{
+            width:100%;
+            object-fit: cover;
+        }
+
+        /* end of service settings */
+        /* about settings */
+        .about-div{
+            position: relative;
+            /* background-color: #63e1ea; */
+        }
+        .about-img{
+            position: relative;
+            background-size: cover;
+            width:100%;
+          
+        }
+        .about-title{
+            position: absolute;
+            left:0px;
+            right:0px;
+            /* margin:auto; */
+            text-align: center;
+            /* background-color: black; */
+
+        }
+       
+        .about-info{
+            position: absolute;
+            top:60px;
+            left:40px;
+            right:40px;
+            text-align: left;
+            font-size: 30px;
+            /* background-color: rgba(0, 0, 0,0.3); */
+            /* hexa decimal base16 - 0-9 A-F */
+            /* rgb : 0-255 */
+            color: #0f0f10;
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* end of about setings */
+        .contact-div{
+            position: relative;
+            /* background-color: #ecba7c; */
+            padding:10px;
+            text-align: center;
+        }
+        .contact-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap:20px;
+        }
+        .contact-img{
+            width:100%;
+            object-fit: cover;
+        }
+        .contact-form-container{
+            /* background-color: #70f798; */
+            /* text-align: left; */
+            padding:20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form-settings >input{
+            width:60%;
+            font-size: 20px;
+            margin-bottom:20px;
+            padding:10px;
+
+        }
+
+
+
+
+/* main settings */
+
+.footer-settings{
+    position: relative;
+    background-color: #f6f2f2;
+    height: 100px;
+}
