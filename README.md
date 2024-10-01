@@ -13,8 +13,8 @@ Nisl proin ligula penatibus donec nostra suspendisse. Porttitor ultricies ipsum 
 
 ## Website Link:
 
-[Link Text] (https://codingclassestno.github.io/waystravel-site/)
-[Our Website] (https://codingclassestno.github.io/waystravel-site/)
+### [Link Text] (https://codingclassestno.github.io/waystravel-site/)
+### [Our Website] (https://codingclassestno.github.io/waystravel-site/)
 
 
 ## Contributors/ Collaborators
